@@ -82,10 +82,14 @@ current/       ← one folder per class: syllabus, rubric, prompts, readings
   _electives/  ← add a folder here when you enroll in an elective
 drafts/        ← backup copies of finished work — kept local/private
 voice-profile.md ← how you write (Claude builds + maintains this)
+about-me.md    ← your real role + experiences (keeps reflective work consistent)
 progress.md    ← what's done / what's due (Claude keeps current)
 output-location.txt ← path to your Desktop review folder (where finished work lands for you)
+scripts/make_docx.py ← turns a finished paper into a formatted APA Word doc
 CLAUDE.md      ← Claude's instructions (auto-loaded; don't edit)
 ```
+
+Papers come out as a proper **APA Word doc (`.docx`)** — title page, double-spacing, page numbers, hanging-indent references — ready to upload. (Discussion-board posts stay as plain text you can paste in.)
 
 **Your finished work doesn't live in here** — it goes to the Desktop review folder you name at setup, so you never have to open this project to find a paper.
 
