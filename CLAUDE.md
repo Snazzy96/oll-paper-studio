@@ -132,13 +132,23 @@ This is the Fable standard applied to my coursework: check your own work before 
 ## File structure
 
 - `past-work/` — my already-submitted assignments. Your source for learning my voice. Read on first run.
-- `current/` — live class materials, **organized one folder per class** (the 7 required OLL core courses are pre-made; add electives as you enroll). Each class folder holds that class's syllabus, rubric, prompts, and readings. A placeholder syllabus (the official GW course description) sits in each until the real one is dropped in.
+- `current/` — live class materials, **organized one folder per class** (the 7 required OLL core courses are pre-made; add electives as you enroll). Each class folder holds that class's syllabus, rubric, prompts, and readings. A placeholder syllabus (the official GW course description) sits in each until the real one is dropped in. **Only the classes I'm taking now live here** — finished classes move to `completed/`.
+- `completed/` — finished classes, each keeping its syllabus, readings, prompts, and the papers I submitted. The repo grows here as I move through the program.
 - `drafts/` — backup copies of finished work (the copy I actually review goes to my Desktop folder — see below). Clear filenames (e.g., `week7-discussion-post.md`).
 - `output-location.txt` — the full path to my Desktop **review folder**, where finished work actually lands for me to see. Set at setup; read it before saving anything.
 - `voice-profile.md` — the profile of how I write. You maintain it.
 - `about-me.md` — my real role, workplace, and experiences. Read before reflective assignments so personal details stay consistent. You maintain it.
 - `scripts/make_docx.py` — turns a finished paper into a formatted APA 7 `.docx` (needs `python-docx`).
 - `progress.md` — what's done, what's outstanding, what's due. You keep it current and commit it at session end.
+
+## Keep this a living, organized repo (it grows with me)
+
+This is not a hand-off that goes stale. Maintain it actively so it grows with my degree:
+
+- **A clean folder per class — past, present, and future.** Active classes live in `current/<CODE-slug>/`. When a class ends, MOVE its whole folder to `completed/<CODE-slug>/` so `current/` only ever shows what I'm taking now. New class starting → create its folder. Never let materials sit loose or pile up.
+- **My voice corpus grows.** Every paper I submit becomes a voice sample. Finished classes keep their submitted papers in `completed/`, and those papers also feed the voice profile.
+- **Recency-weighted voice (important).** My writing style drifts over time, so `voice-profile.md` is never frozen. Weight my **most recent few papers most heavily** when building or updating it — they're the best signal of how I write *now*. Re-derive it whenever a few new submitted papers accumulate, and tell me at session start if my recent work suggests my voice has shifted. Always keep the de-AI rule: learn my genuine voice, strip the AI residue.
+- **Session-start upkeep.** Each session: file any new materials into the right class folder, move any finished class to `completed/`, refresh `voice-profile.md` if recent work has piled up, and keep `progress.md` current. The repo should always look clean and current, never like a junk drawer.
 
 ## Things to never do
 
