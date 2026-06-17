@@ -43,14 +43,28 @@ Claude will walk you through four things, one at a time (it's reading the "First
 | You want… | Say something like… | You get… |
 |---|---|---|
 | **A finished assignment** (default) | *"Write my week 4 discussion post for HOL 6701"* | The complete, submission-ready draft in your voice, saved to `drafts/`. |
-| **To sound prepared for a live call** | *"Brief me — I have a group discussion on adult learning"* | A tight 5-minute brief: what it's about, the points that'll come up, things you can say. |
+| **A cheat sheet for a live discussion** | *"Prep me a cheat sheet for this week's discussion in HOL 6701"* | A one-page reference saved to your Desktop folder — topic summary, key points, things to say, smart questions to ask — to keep open during the video call. |
 | **To polish your own rough draft** | *"Polish this"* + paste your text | Your ideas, cleaned into your finished voice. |
+
+### Letting Claude read your class for you (portal mode)
+You don't have to download and drop in files yourself. Because the Claude Chrome extension is set up and you stay logged into your school portal, you can just point Claude at a class:
+
+> *"Go look at my class for module 7 and do this week's project."*
+> *"Check what's due in HOL 6701 this week and draft it."*
+
+Claude opens your portal in Chrome, finds that module, reads the assignment + rubric + required readings, saves them into the right class folder, then writes the paper. You're logged in — it just navigates; if a page needs a click only you can do, it'll ask you for that one step. It never logs in as you or wanders outside your coursework.
+
+### Where your finished work shows up
+Everything you need to review lands in your **Desktop review folder** — you name it during setup (default `GW Review`) — with a clear, dated filename like `HOL6700 - Module 7 Applied Paper - 2026-06-17`. That's the *one* place to look; you never dig inside the project. (A backup copy is also kept in `drafts/`.)
+
+### Weekly video discussions (your cheat sheet)
+You have live video discussions you can't skip. Before one, ask: *"prep me a cheat sheet for this week's discussion in HOL 6701."* Claude reads the week's topic + readings (from the folder or your portal) and saves a **one-page cheat sheet to your Desktop folder** — what the topic's about, the points that'll come up, a few things you can say in your own words, and a smart question or two to ask. Open it on screen during the call and you can hold the conversation without having done all the reading. It's the one place Claude helps you *sound* prepared rather than just handing in work.
 
 ### The normal rhythm of a paper
 
-1. Drop the **assignment prompt + rubric** into that class's folder under `current/` (e.g. `current/HOL-6700-human-behavior-and-learning/`). Also drop in any **readings** the professor assigned — Claude uses those as real sources.
-2. Tell Claude what you need and the class.
-3. Claude reads the rubric, writes **to it**, matches the word count and **APA 7** format, and saves the draft to `drafts/`.
+1. Get the materials in — either drop the **assignment prompt + rubric + readings** into that class's folder under `current/` (e.g. `current/HOL-6700-human-behavior-and-learning/`), **or** use portal mode above and let Claude pull them from your course site.
+2. Tell Claude what you need and the class (or module).
+3. Claude reads the rubric, writes **to it**, matches the word count and **APA 7** format, and saves the finished draft to your **Desktop review folder** (plus a backup in `drafts/`).
 4. It gives you a 2-sentence "what this is / what to check." You skim, tweak, submit.
 5. At the end of a session it updates `progress.md` and backs everything up — without being asked.
 
@@ -66,11 +80,14 @@ past-work/     ← your old papers (Claude learns your voice from these) — kep
 current/       ← one folder per class: syllabus, rubric, prompts, readings
   HOL-6700-.../ HOL-6701-.../ ... (7 required core courses pre-made)
   _electives/  ← add a folder here when you enroll in an elective
-drafts/        ← finished work Claude produces — kept local/private
+drafts/        ← backup copies of finished work — kept local/private
 voice-profile.md ← how you write (Claude builds + maintains this)
 progress.md    ← what's done / what's due (Claude keeps current)
+output-location.txt ← path to your Desktop review folder (where finished work lands for you)
 CLAUDE.md      ← Claude's instructions (auto-loaded; don't edit)
 ```
+
+**Your finished work doesn't live in here** — it goes to the Desktop review folder you name at setup, so you never have to open this project to find a paper.
 
 **Each class folder has a placeholder syllabus** (the official GW course description) until you drop in the real one. When you get the real syllabus, replace the placeholder note in that folder's `README.md` and Claude will follow the real requirements.
 

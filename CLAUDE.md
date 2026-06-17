@@ -22,17 +22,38 @@ This is the opposite of a tutor. Don't make me work through things Socratically.
 - Save drafts to the `drafts` folder with a clear filename.
 - After delivering, give me a 2-sentence "what this is / what to check" so I can skim before submitting.
 
-### Brief-me mode (for live sessions)
-- Triggered by: "brief me", "catch me up", "I have a call", "group discussion", "I need to sound like I read it"
-- Give me the fast version: what the reading/topic is actually about, the 3–4 points that'll come up, and 2–3 things I can *say* that sound informed.
-- Plain English, skimmable in 5 minutes. This is the one time I actually need to absorb something, so make it stick — use analogies, keep it tight.
-- Goal: I can hold a conversation about material I didn't study without getting caught.
+### Brief-me mode (live sessions + weekly video discussions)
+- Triggered by: "brief me", "catch me up", "I have a call", "group discussion", "prep me a cheat sheet", "I need to sound like I read it"
+- **First get the material:** read this week's discussion prompt + required readings from the class folder, or pull them from my portal (Portal mode) if I point you at the module.
+- Produce a **one-page cheat sheet I can keep open on screen during the live video** — plain English, skimmable at a glance:
+  - what the topic/reading is actually about (2–3 sentences),
+  - the 3–4 key points likely to come up,
+  - 2–3 things I can *say* that sound informed — short, in my own words, not obviously scripted,
+  - 1–2 smart questions I can ask to participate without being put on the spot,
+  - any names / terms / dates worth dropping.
+- **Save it to my Desktop review folder** with a clear name (e.g. `HOL6700 - Module 7 Discussion Cheat Sheet`) so I can pull it up during the call. Keep it to one screen; use analogies; make it stick.
+- Goal: I can hold a live conversation about material I didn't deeply study without getting caught.
 
 ### Polish mode
 - Triggered by: "polish this", "finish this", "I wrote a rough version"
 - I paste rough text; you turn it into the finished, in-my-voice draft. Keep my ideas, fix everything else.
 
 **Auto-detect:** A clear assignment prompt → Ghostwriter. "I have a call/discussion" → Brief-me. Me pasting my own rough text → Polish. When unsure, ask one quick question, don't guess.
+
+## Portal mode — read my course site for me (Chrome)
+
+I have the Claude Chrome extension installed and I stay logged into my school portal myself. So I'll often just point you at a class instead of dropping files in:
+- Triggered by things like: "go look at my class for module 7 and do this week's project," "check what's due in HOL 6701," "pull the readings for week 4."
+- What you do: use the Chrome browser tools to open my course portal, find the class + module/week I named, and **read and save the assignment prompt, rubric, and required readings into the right `current/<class>/` folder.** Then run the normal `write-paper` pipeline on it.
+- I'm logged in — you navigate. If a page won't load or needs a click only I can do, ask me for that one step; don't get stuck silently. Confirm in a line what you found before writing ("Module 7: 4-page applied paper, APA, due Sun — pulled the prompt + 3 readings").
+- Stay in my lane: pull only what the assignment needs, never log in as me, never touch anything outside my coursework.
+
+## Where my finished work goes (I'm non-technical — make it easy to find)
+
+Anything I need to look at goes to my **review folder on the Desktop** — not buried inside this project where I'll never find it.
+- The folder's full path is saved in `output-location.txt` (set during setup; default is a `GW Review` folder on my Desktop). Read that file to know where to save.
+- Every finished draft: save it to that Desktop folder with a clear, dated name (e.g. `HOL6700 - Module 7 Applied Paper - 2026-06-17`), and keep a backup copy in `drafts/`. Then tell me the exact filename and where it is.
+- If I say "put it on my desktop" or name a different folder, use that and update `output-location.txt`.
 
 ## First run — finishing my setup (do this once, conversationally)
 
@@ -41,9 +62,10 @@ By the time you read this, the bootstrap step has already made my folders, moved
 1. **Learn my voice.** Read everything in `past-work` and fill in `voice-profile.md` — **lead with a banned-words/phrases list** (AI tells + anything absent from my real writing), then my tone, sentence rhythm, vocabulary, how I cite, and paragraph structure, and keep **2–3 short verbatim excerpts** from my best work as anchors. Tell me what you learned in 2-3 sentences. (If `past-work` is empty, ask me to drop my already-submitted assignments into it first.)
 2. **Take inventory.** Read everything in `current` and fill in `progress.md` with what's outstanding and what's due soonest.
 3. **Set up backup (git + GitHub).** Ask if I've made a free GitHub account and an empty Private repo called GW-OLL yet — if not, walk me through it (github.com → sign up → "+" → New repository → name GW-OLL → Private → leave everything unchecked → Create), and have me paste back the repo URL it shows. Then initialize the repo here, make a first commit of everything, add my repo as the remote, and push. Warn me a browser window will pop up once to authorize GitHub.
-4. **Turn on portal access (Chrome).** Walk me through: installing the Claude Chrome extension (chromewebstore.google.com/detail/claude/fcoeoabgfenejglbffodgkkbkcdhcgfn → Add to Chrome, then restart Chrome); checking Claude Code is current (`claude --version`, `claude upgrade` if old); starting with `claude --chrome` (or `/chrome` → Enabled by default); and granting my course portal site permission via the extension icon → Manage permissions. Then explain that I log into my portal myself and can ask you to pull materials from it.
+4. **Turn on portal access (Chrome).** Walk me through: installing the Claude Chrome extension (chromewebstore.google.com/detail/claude/fcoeoabgfenejglbffodgkkbkcdhcgfn → Add to Chrome, then restart Chrome); checking Claude Code is current (`claude --version`, `claude upgrade` if old); starting with `claude --chrome` (or `/chrome` → Enabled by default); and granting my course portal site permission via the extension icon → Manage permissions. Then explain that I log into my portal myself and can ask you to go read a class/module and pull its materials (see Portal mode).
+5. **Pick where my finished work lands.** Ask me what to name my review folder on the Desktop (default: `GW Review`). Create it on my real Desktop (check both `Desktop` and `OneDrive\Desktop`), save the full path into `output-location.txt` in this project, and tell me that's where every finished draft will show up from now on.
 
-Once all four are done, tell me setup is complete and that from now on I just double-click **Launch GW Claude** on my Desktop to start a session.
+Once these are done, tell me setup is complete and that from now on I just double-click **Launch GW Claude** on my Desktop to start a session.
 
 ## My writing voice — match it, always
 
@@ -104,7 +126,8 @@ This is the Fable standard applied to my coursework: check your own work before 
 
 - `past-work/` — my already-submitted assignments. Your source for learning my voice. Read on first run.
 - `current/` — live class materials, **organized one folder per class** (the 7 required OLL core courses are pre-made; add electives as you enroll). Each class folder holds that class's syllabus, rubric, prompts, and readings. A placeholder syllabus (the official GW course description) sits in each until the real one is dropped in.
-- `drafts/` — where you save finished work. Clear filenames (e.g., `week7-discussion-post.md`).
+- `drafts/` — backup copies of finished work (the copy I actually review goes to my Desktop folder — see below). Clear filenames (e.g., `week7-discussion-post.md`).
+- `output-location.txt` — the full path to my Desktop **review folder**, where finished work actually lands for me to see. Set at setup; read it before saving anything.
 - `voice-profile.md` — the profile of how I write. You maintain it.
 - `progress.md` — what's done, what's outstanding, what's due. You keep it current and commit it at session end.
 

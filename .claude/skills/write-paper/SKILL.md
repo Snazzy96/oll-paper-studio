@@ -13,7 +13,7 @@ Use real subagents (the Task tool) for the parallel drafting and the review pass
 
 ## Phase 0 — Intake & plan (gather everything, then plan to the rubric)
 
-1. **Locate the class folder.** From what the user names (e.g. "HOL 6700", "adult learning"), open the matching folder under `current/`. Read, in this order:
+1. **Get the materials — from the folder, or pull them from the portal.** From what the user names (e.g. "HOL 6700", "module 7", "adult learning", "this week's project"), open the matching folder under `current/`. **If the prompt / rubric / readings aren't already there and the user has pointed you at their course portal, use the Chrome browser tools to read the portal:** open the course, find the module/week the user named, and read + save the assignment prompt, rubric, and required readings into that `current/<class>/` folder before continuing. The user is logged into the portal themselves — navigate for them, and if a page won't load or needs a click, ask them to do that one step. Confirm in a line what you found ("Module 7: 4-page applied paper, APA, due Sun; pulled the prompt + 3 readings"). Then read, in this order:
    - the **syllabus** (format required, due date, any instructor-specific rules — these override the APA-7 default),
    - the **assignment prompt / discussion question**,
    - the **rubric** (if present),
@@ -57,7 +57,7 @@ Apply the review findings. If a gap needs the user (a missing source, a personal
 
 ## Phase 5 — Deliver
 
-- Save the finished draft to `drafts/` with a clear name (e.g. `hol6700-week4-discussion-post.md`).
+- Save the finished draft to `drafts/` with a clear name (e.g. `hol6700-week4-discussion-post.md`), **and copy the final version to the user's Desktop review folder** — the path recorded at setup in `output-location.txt` (default: a `GW Review` folder on their Desktop). That Desktop folder is where the user actually looks; the finished work must land there, not only inside the repo. Tell them the filename and exactly where it is.
 - Give the user a **2-sentence "what this is / what to check."**
 - Surface any flags plainly: missing sources, spots that need their real experience, any citation you couldn't verify, or a rubric criterion you couldn't fully hit.
 - Update `progress.md` (mark this assignment drafted). At session end, commit + push.
@@ -70,7 +70,7 @@ Apply the review findings. If a gap needs the user (a missing source, a personal
 - [ ] APA 7 correct (or the syllabus's required format)
 - [ ] Reads in the student's voice — voice harmonizer ran, AI tells gone, checked against `voice-profile.md`
 - [ ] Every citation real and supports its claim — zero fabricated or unverifiable sources left unflagged
-- [ ] Saved to `drafts/`, with the 2-line summary + any open flags surfaced
+- [ ] Saved to `drafts/` **and copied to the Desktop review folder**, with the 2-line summary + any open flags surfaced
 
 ## Hard rules (from CLAUDE.md — non-negotiable)
 - Never fabricate a citation, source, author, study, page number, or quote.

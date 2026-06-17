@@ -1,6 +1,6 @@
 # GW OLL Paper Studio
 
-A ready-to-go workspace that turns Claude Code into your **personal coursework assistant** for George Washington University's **Organizational Leadership & Learning (OLL)** master's program. It writes complete, submission-ready coursework **in your own voice**, keeps your classes and materials organized, and never fakes a citation.
+A ready-to-go workspace that turns Claude Code into your **personal coursework assistant** for George Washington University's **Organizational Leadership & Learning (OLL)** master's program. Point it at your course portal and it reads your assignments, writes complete, submission-ready coursework **in your own voice**, backs every citation with a real source, and drops the finished file in a folder on your Desktop. It'll also prep a one-page cheat sheet for your weekly video discussions.
 
 > **You don't need to be technical.** If you've never used a terminal, that's fine — the setup literally coaches you through it one step at a time.
 
@@ -21,7 +21,7 @@ finish my setup
 Claude will then: learn your writing voice from your past papers, take inventory of what's due, and set up automatic backup — walking you through each part.
 
 **Phase 3 — Use it.**
-Drop an assignment prompt into the right class folder and say what you need (e.g. *"write my week 3 discussion post for HOL 6700"*). You get a finished draft in your voice. Full details in **`GETTING-STARTED.md`**.
+Just talk to it — e.g. *"go look at module 7 in HOL 6700 and do this week's project"* (it reads your portal), or *"write my week 3 discussion post."* Finished work lands in your **Desktop review folder**. Before a live class, say *"prep me a cheat sheet for this week's discussion"* and you'll get a one-pager to keep open during the call. Full details in **`GETTING-STARTED.md`**.
 
 ---
 

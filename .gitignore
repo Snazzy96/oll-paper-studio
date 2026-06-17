@@ -15,6 +15,9 @@ drafts/*
 current/*/*
 !current/*/README.md
 
+# Per-user local config (holds your personal Desktop path) — not for the public template
+output-location.txt
+
 # OS / editor junk
 .DS_Store
 Thumbs.db
