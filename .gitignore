@@ -1,0 +1,23 @@
+# This is a PUBLIC template repo — it ships structure + docs only, never real coursework.
+# Your actual papers, drafts, syllabi, and readings stay on your computer (and in YOUR
+# own private backup repo), not published here.
+
+# Your past papers (voice samples) — keep local
+past-work/*
+!past-work/README.md
+
+# Finished drafts Claude produces — keep local
+drafts/*
+!drafts/README.md
+
+# Per-class materials (syllabi, rubrics, prompts, readings, papers) — keep local,
+# but keep each class folder's README (the placeholder syllabus + instructions)
+current/*/*
+!current/*/README.md
+
+# OS / editor junk
+.DS_Store
+Thumbs.db
+desktop.ini
+*.tmp
+~$*
