@@ -41,10 +41,10 @@ Drop an assignment prompt into the right class folder and say what you need (e.g
 
 ---
 
-## The one firm rule
+## Real research, real sources
 
-Claude will write your coursework, in your voice, all-in — **but it will never invent a citation, source, or quote.** Fake references are the fastest way to get flagged, so if a paper needs real sources it doesn't have, it tells you what to go find instead of making them up. That's the deal, and it's there to protect you.
+This isn't an AI making things up. The pipeline **does real research** — it pulls your assigned readings and searches actual scholarly literature (Google Scholar, Semantic Scholar, OpenAlex), then **verifies every citation against a real database** before it goes in your paper. It will **never invent a citation, source, or quote** — fake references are the fastest way to get flagged. If a paper needs sources it can't find or verify, it tells you what to look for instead of faking it. That's the deal, and it's there to protect you.
 
 ---
 
-<sub>Built for a friend in the GW OLL program. Optional power-up for heavy research papers: the [`academic-research-skills`](https://github.com/Imbad0202/academic-research-skills) Claude Code plugin (CC BY-NC 4.0, by Cheng-I Wu) adds automated citation verification against Semantic Scholar/OpenAlex/Crossref. See `GETTING-STARTED.md` → "Optional power-up."</sub>
+<sub>Built for a friend in the GW OLL program. Recommended research engine: the [`academic-research-skills`](https://github.com/Imbad0202/academic-research-skills) Claude Code plugin (CC BY-NC 4.0, by Cheng-I Wu) does real literature search + verifies citations against Semantic Scholar / OpenAlex / Crossref. Install it during setup — see `GETTING-STARTED.md` → "Research engine."</sub>

@@ -20,7 +20,11 @@ Use real subagents (the Task tool) for the parallel drafting and the review pass
    - the **assigned readings** for the relevant week (these are your source pool).
 2. **Read `voice-profile.md`** (the ban list, voice fingerprint, and verbatim anchors). If it's missing or empty, stop and ask the user to drop past papers into `past-work/` so the voice can be built first.
 3. **Extract the spec:** deliverable type, exact word/page count, required format, and the list of **rubric criteria** every part must satisfy.
-4. **Check the source situation.** List the real sources available (assigned readings in the folder + anything the user provided). If the assignment needs sources you don't have, say so now and tell the user what to drop in — do **not** plan to invent any.
+4. **Research for real — build a verified source pool.** This is central, not a formality. Assemble sources in this order:
+   - the **assigned readings** in the class folder (use these first),
+   - **real scholarly literature you find by searching** — Google Scholar, Semantic Scholar, OpenAlex, Crossref, journal pages (use WebSearch/WebFetch; if the `academic-research-skills` plugin is installed, use its research + verification engine). Pull actual papers with real authors, years, and DOIs.
+   - For each candidate source, **read enough to confirm it's real and that it says what you'll claim it says.** Record it in the source pool only once verified.
+   - If the assignment needs sources you can't find or verify, say so now and tell the user what to look for (or to drop readings in) — **never plan to invent a source.** No claim gets drafted on an unverified citation.
 5. **Plan sections** mapped to the rubric: a short outline where each section names the rubric criteria it covers and which real sources it will draw on. For a short discussion post this may be 2–3 sections; for a paper, more.
 6. **Reflective/personal content:** if the prompt asks for personal experience (common in OLL), ask the user for the real specifics now (their job, a real example) — never invent anecdotes.
 7. **One quick confirm, then go.** Show the plan in a few lines and proceed unless the user objects. Do not turn this into a Socratic back-and-forth — the user wants it done.

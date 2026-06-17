@@ -88,16 +88,18 @@ Default for the whole OLL program is **APA 7th edition** (GSEHD's standard). If 
 
 ---
 
-## Optional power-up (only if you want it)
+## Research engine (install this during setup)
 
-For a heavy research paper that needs lots of **outside** sources verified, you can install a free add-on that checks every citation against real academic databases (Semantic Scholar, OpenAlex, Crossref) so nothing is hallucinated. In your Claude Code window:
+Real papers need real sources, so this isn't optional. A free add-on does genuine literature search and checks every citation against real academic databases (Semantic Scholar, OpenAlex, Crossref) so nothing is hallucinated. Install it once, in your Claude Code window:
 
 ```
 /plugin marketplace add Imbad0202/academic-research-skills
 /plugin install academic-research-skills
 ```
 
-Then just say *"do a full research paper on X"*. This is overkill for normal discussion posts and reflections — skip it unless a paper genuinely needs a big verified bibliography. (Add-on by Cheng-I Wu, CC BY-NC 4.0.)
+(Then open the `/plugin` menu and turn on auto-update so it stays current.)
+
+After it's installed, the normal flow doesn't change — you still just ask for your assignment, and the pipeline uses it to find and verify sources behind the scenes. For a big research-heavy paper you can also say *"do a full research paper on X"* to lean on it harder. Without it, Claude still researches and verifies by reading the real sources directly — the plugin just makes the database checking automatic and more thorough. (Engine by Cheng-I Wu, CC BY-NC 4.0.)
 
 ---
 
