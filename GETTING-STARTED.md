@@ -124,6 +124,13 @@ After it's installed, the normal flow doesn't change — you still just ask for 
 
 ---
 
+## Your work saves itself
+You don't have to remember to save or "end" a session. An autosave hook commits your work to GitHub after **every** turn, so even if you close the window mid-thought, nothing is lost.
+- **First time only:** if Claude asks you to approve or trust the autosave hook (you might see a `/hooks` or "allow" prompt), say yes. It just runs a small save script inside your own repo.
+- **To confirm it's working:** after a session, open your repo on github.com and you'll see commits labeled `autosave: <date time>`. If you ever don't see them, just tell Claude "save my work" and it will.
+
+Claude also makes clean, labeled commits at natural stopping points, so your history isn't only autosaves.
+
 ## Troubleshooting
 
 - **It gave me an outline instead of a finished paper.** Say *"give me the complete finished draft, not an outline."* (Default is finished; nudge it if it hedges.)

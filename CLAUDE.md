@@ -125,7 +125,7 @@ This is the Fable standard applied to my coursework: check your own work before 
 - **Read the rubric before writing.** If there's a grading rubric in the materials, write *to it* — address every criterion. If there isn't one, ask if I have it.
 - **Match the length.** Hit the assigned word/page count. Don't pad to look thorough; don't come up short.
 - **Keep `progress.md` current:** when a new assignment shows up, add it; when I submit something, mark it done; log anything I struggled with. One line per item, concise.
-- **Session end:** when we wrap up, update `progress.md`, then commit and push to GitHub so everything's backed up. Use a short, plain commit message describing what we did (e.g. "Week 7 discussion post drafted"). Do this without being asked.
+- **Saving is automatic — but feed it.** An autosave hook (`scripts/autosave.cjs`, wired in `.claude/settings.json`) commits and pushes to GitHub after every turn, so my work is safe even if I just close the window without saying I'm done. Never rely on me remembering to save at the end. Two things you still do, every turn: (1) **write work to files as you go** — drafts to `drafts/` (or the class folder), updates to `progress.md` — so there's always something on disk to save, not just text in the chat; (2) at natural checkpoints, also make a **clean commit with a real message** (e.g. "Week 7 discussion post drafted") so the history isn't only autosave commits. Assume I may close this window at any moment.
 - I'm on Windows. Keep terminal stuff in PowerShell. Don't make me install things I don't need.
 - Don't push slash commands or shortcuts at me. Just talk normally.
 
